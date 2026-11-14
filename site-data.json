@@ -1,0 +1,285 @@
+{
+  "catalog": [
+    {
+      "name": "KODE.MINI Python engine",
+      "category_label": "AI · PYTHON",
+      "description": "Explore the Python source for the KODE.MINI conversational assistant. The implementation describes itself as an offline, rule-based engine.",
+      "categories": [
+        "all",
+        "ai",
+        "code",
+        "project"
+      ],
+      "tags": [
+        "Python",
+        "99 KB",
+        "MIT in source"
+      ],
+      "icon": "PY",
+      "detail_path": "/models/kode-mini",
+      "download_id": "kode-mini-python",
+      "download_label": "Get source ↓",
+      "license_id": "kode-mini-readme",
+      "license_label": "Project notes ↗"
+    },
+    {
+      "name": "KODE.MINI project notes",
+      "category_label": "PROJECT · README",
+      "description": "Setup and usage notes for the expanded KODE.MINI package, including the included knowledge-base file.",
+      "categories": [
+        "all",
+        "project"
+      ],
+      "tags": [
+        "Python",
+        "Offline",
+        "Project docs"
+      ],
+      "icon": "↗",
+      "detail_path": "/projects/kode-mini",
+      "download_id": "kode-mini-readme",
+      "download_label": "Read notes ↓",
+      "license_id": "kode-mini-readme",
+      "license_label": "Project notes ↗"
+    },
+    {
+      "name": "Open-Kode website source",
+      "category_label": "WEBSITE · FULL SOURCE",
+      "description": "Download this site’s HTML, CSS, JavaScript, Python server, setup notes, and browser icon as a ZIP archive.",
+      "categories": [
+        "all",
+        "code",
+        "project"
+      ],
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "icon": "{ }",
+      "detail_path": "/projects/openkode-website",
+      "download_id": "openkode-source",
+      "download_label": "Get website source ↓",
+      "license_id": "openkode-license",
+      "license_label": "License ↗"
+    },
+    {
+      "name": "Clawd for Windows",
+      "category_label": "APP · WINDOWS",
+      "description": "Download the Clawd desktop application build directly. This is an app installer build, not source code.",
+      "categories": [
+        "all",
+        "project",
+        "app"
+      ],
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.6 MB"
+      ],
+      "icon": "EXE",
+      "detail_path": "/apps/clawd",
+      "download_id": "app-clawd",
+      "download_label": "Download app ↓",
+      "license_id": "openkode-license",
+      "license_label": "App details ↗"
+    },
+    {
+      "name": "Ganesha for Windows",
+      "category_label": "APP · WINDOWS",
+      "description": "Download the Ganesha desktop application build directly. This is an app installer build, not source code.",
+      "categories": [
+        "all",
+        "project",
+        "app"
+      ],
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.5 MB"
+      ],
+      "icon": "EXE",
+      "detail_path": "/apps/ganesha",
+      "download_id": "app-ganesha",
+      "download_label": "Download app ↓",
+      "license_id": "openkode-license",
+      "license_label": "App details ↗"
+    },
+    {
+      "name": "Kode for Windows",
+      "category_label": "APP · WINDOWS",
+      "description": "Download the Kode desktop application build directly. This is an app installer build, not source code.",
+      "categories": [
+        "all",
+        "project",
+        "app"
+      ],
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.4 MB"
+      ],
+      "icon": "EXE",
+      "detail_path": "/apps/kode",
+      "download_id": "app-kode",
+      "download_label": "Download app ↓",
+      "license_id": "openkode-license",
+      "license_label": "App details ↗"
+    },
+    {
+      "name": "Minux for Windows",
+      "category_label": "APP · WINDOWS",
+      "description": "Download the Minux desktop application build directly. This is an app installer build, not source code.",
+      "categories": [
+        "all",
+        "project",
+        "app"
+      ],
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.4 MB"
+      ],
+      "icon": "EXE",
+      "detail_path": "/apps/minux",
+      "download_id": "app-minux",
+      "download_label": "Download app ↓",
+      "license_id": "openkode-license",
+      "license_label": "App details ↗"
+    }
+  ],
+  "details": {
+    "kode-mini": {
+      "title": "KODE.MINI",
+      "category": "AI MODEL · PYTHON",
+      "kind": "model",
+      "summary": "A local-first conversational assistant implemented with Python decision rules.",
+      "description": "KODE.MINI is an inspectable Python assistant that classifies prompts and produces responses from built-in rules and knowledge. It does not contain neural-network weights or call an external model API. Run the local server to try the model, or browse its source here.",
+      "tags": [
+        "Python",
+        "Rule-based",
+        "Offline",
+        "No model weights"
+      ],
+      "download_id": "kode-mini-python",
+      "download_label": "Download Python source",
+      "secondary_path": "/playground",
+      "secondary_label": "Use the model",
+      "notes": "The existing source file identifies its license as MIT. Keep its original author and license notice when redistributing it."
+    },
+    "kode-mini-project": {
+      "title": "KODE.MINI project",
+      "category": "PROJECT · PYTHON",
+      "kind": "project",
+      "summary": "The complete KODE.MINI project notes and source entry point.",
+      "description": "Read the package notes for the KODE.MINI offline assistant, then download the Python engine. The expanded knowledge-base data is not included in the public download listing until its redistribution terms are confirmed.",
+      "tags": [
+        "Python",
+        "Project notes",
+        "Offline assistant"
+      ],
+      "download_id": "kode-mini-readme",
+      "download_label": "Download project notes",
+      "secondary_path": "/models/kode-mini",
+      "secondary_label": "Model details",
+      "notes": "The Python engine is available separately from the project notes."
+    },
+    "openkode-website": {
+      "title": "Open-Kode website",
+      "category": "PROJECT · OPEN SOURCE",
+      "kind": "project",
+      "summary": "The full source for the Open-Kode website and Python server.",
+      "description": "Download the website’s HTML, responsive CSS, JavaScript, PNG logo, and Python backend in one archive. The site includes a public library, account sign-in, the KODE.MINI AI playground, and API key management.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "MIT"
+      ],
+      "download_id": "openkode-source",
+      "download_label": "Download full website source",
+      "secondary_path": "/",
+      "secondary_label": "Back to home",
+      "notes": "The Open-Kode website source is licensed under MIT. Local account passwords are stored as salted scrypt hashes. The Python server is needed for accounts and KODE.MINI API requests."
+    },
+    "clawd": {
+      "title": "Clawd",
+      "category": "WINDOWS APP",
+      "kind": "app",
+      "summary": "A Windows application build from the Open-Kode workspace.",
+      "description": "Download the Clawd Windows executable directly. The current workspace contains this built application, but does not include matching source code or separate product documentation.",
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.6 MB"
+      ],
+      "download_id": "app-clawd",
+      "download_label": "Download Clawd for Windows",
+      "secondary_path": "/#library",
+      "secondary_label": "Browse other apps",
+      "notes": "This download is an executable application, not source code. Verify the file before running it. No source or standalone license file was found for this build."
+    },
+    "ganesha": {
+      "title": "Ganesha",
+      "category": "WINDOWS APP",
+      "kind": "app",
+      "summary": "A Windows application build from the Open-Kode workspace.",
+      "description": "Download the Ganesha Windows executable directly. The current workspace contains this built application, but does not include matching source code or separate product documentation.",
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.5 MB"
+      ],
+      "download_id": "app-ganesha",
+      "download_label": "Download Ganesha for Windows",
+      "secondary_path": "/#library",
+      "secondary_label": "Browse other apps",
+      "notes": "This download is an executable application, not source code. Verify the file before running it. No source or standalone license file was found for this build."
+    },
+    "kode": {
+      "title": "Kode",
+      "category": "WINDOWS APP",
+      "kind": "app",
+      "summary": "A Windows application build from the Open-Kode workspace.",
+      "description": "Download the Kode Windows executable directly. The current workspace contains this built application, but does not include matching source code or separate product documentation.",
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.4 MB"
+      ],
+      "download_id": "app-kode",
+      "download_label": "Download Kode for Windows",
+      "secondary_path": "/#library",
+      "secondary_label": "Browse other apps",
+      "notes": "This download is an executable application, not source code. Verify the file before running it. No source or standalone license file was found for this build."
+    },
+    "minux": {
+      "title": "Minux",
+      "category": "WINDOWS APP",
+      "kind": "app",
+      "summary": "A Windows application build from the Open-Kode workspace.",
+      "description": "Download the Minux Windows executable directly. The current workspace contains this built application, but does not include matching source code or separate product documentation.",
+      "tags": [
+        "Windows",
+        "EXE",
+        "8.4 MB"
+      ],
+      "download_id": "app-minux",
+      "download_label": "Download Minux for Windows",
+      "secondary_path": "/#library",
+      "secondary_label": "Browse other apps",
+      "notes": "This download is an executable application, not source code. Verify the file before running it. No source or standalone license file was found for this build."
+    }
+  },
+  "detail_routes": {
+    "/models/kode-mini": "kode-mini",
+    "/projects/kode-mini": "kode-mini-project",
+    "/projects/openkode-website": "openkode-website",
+    "/apps/clawd": "clawd",
+    "/apps/ganesha": "ganesha",
+    "/apps/kode": "kode",
+    "/apps/minux": "minux"
+  }
+}

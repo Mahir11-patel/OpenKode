@@ -1,0 +1,48 @@
+{
+  "facts": {
+    "python": "Python is a high-level programming language created by Guido van Rossum.",
+    "ai": "Artificial Intelligence is the simulation of human intelligence by machines.",
+    "ml": "Machine Learning is a subset of AI that enables systems to learn from data.",
+    "deep_learning": "Deep Learning uses neural networks with multiple layers to model complex patterns.",
+    "neural_network": "A Neural Network is a computing system inspired by biological neural networks.",
+    "kode_mini": "Kode.Mini is an offline AI engine built entirely on if/elif decision trees. It requires no internet and no external dependencies."
+  },
+  "entities": {
+    "people": [
+      "Einstein",
+      "Turing",
+      "von Neumann",
+      "Lovelace",
+      "Hopper",
+      "Newton",
+      "Galileo",
+      "Curie",
+      "Hawking",
+      "Musk"
+    ],
+    "places": [
+      "Silicon Valley",
+      "MIT",
+      "Stanford",
+      "CERN",
+      "NASA",
+      "Google",
+      "OpenAI",
+      "DeepMind"
+    ],
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Keras",
+      "JavaScript",
+      "Java",
+      "C++",
+      "Rust",
+      "Go"
+    ]
+  },
+  "relationships": {},
+  "conversations": []
+}

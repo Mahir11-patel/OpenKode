@@ -1,18 +1,11 @@
-# Libraries
-*.lvlibp
-*.llb
+.env
+.env.*
+!.env.example
+runtime/
+__pycache__/
+*.py[cod]
+content.json.tmp
+.netlify/
+training/data/
+training/output/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-
-# Metadata
-*.aliases
-*.lvlps
-.cache/
-*.UserState

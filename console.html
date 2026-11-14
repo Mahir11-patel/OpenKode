@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <meta name="description" content="Open-Kode account console and KODE.MINI API key management.">
+  <title>Open-Kode Console</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/console.css">
+</head>
+<body class="console-page">
+  <header class="topbar console-topbar">
+    <a class="brand" href="/" aria-label="Open-Kode home"><img src="/assets/favicon.png" alt="" class="brand-icon"><span>open-kode</span></a>
+    <div class="top-actions"><a class="top-link" href="/">View website <span>↗</span></a><button class="login-button hidden" id="sign-out" type="button">Sign out</button></div>
+  </header>
+  <main class="console-shell">
+    <section class="console-heading">
+      <p class="eyebrow"><span class="pulse"></span> OPEN-KODE / CONTROL ROOM</p>
+      <h1>Your account.<br><span>Your console.</span></h1>
+      <p>Sign in with your email and password to access your Open-Kode workspace.</p>
+    </section>
+
+    <section class="console-login panel" id="auth-panel" aria-labelledby="auth-title">
+      <div class="panel-kicker">OPEN-KODE ACCOUNT</div>
+      <h2 id="auth-title">Welcome back</h2>
+      <div class="auth-tabs" role="tablist" aria-label="Account access">
+        <button class="auth-tab active" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-form">Sign in</button>
+        <button class="auth-tab" id="register-tab" type="button" role="tab" aria-selected="false" aria-controls="register-form">Create account</button>
+      </div>
+      <form id="login-form" class="auth-form">
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" value="mahir31891@gmail.com" autocomplete="username" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" autocomplete="current-password" required>
+        <button class="button button-dark" type="submit">Sign in <span>→</span></button>
+      </form>
+      <form id="register-form" class="auth-form hidden">
+        <label for="register-name">Your name</label>
+        <input id="register-name" type="text" maxlength="80" autocomplete="name" required>
+        <label for="register-email">Email</label>
+        <input id="register-email" type="email" autocomplete="email" required>
+        <label for="register-password">Password <small>(10 characters or more)</small></label>
+        <input id="register-password" type="password" minlength="10" maxlength="256" autocomplete="new-password" required>
+        <label for="register-confirm">Confirm password</label>
+        <input id="register-confirm" type="password" minlength="10" maxlength="256" autocomplete="new-password" required>
+        <button class="button button-dark" type="submit">Create account <span>→</span></button>
+      </form>
+      <p class="console-message" id="auth-message" role="status" aria-live="polite"></p>
+      <p class="console-hint">Passwords are stored as salted hashes. Email is used as your account name; no email code is sent.</p>
+    </section>
+
+    <section class="console-dashboard hidden" id="dashboard" aria-label="Open-Kode account console">
+      <div class="console-welcome">
+        <div><div class="panel-kicker" id="account-role">OPEN-KODE ACCOUNT</div><h2 id="welcome-title">Your workspace</h2><p class="welcome-email" id="welcome-email"></p></div>
+        <span class="secure-pill"><i></i><span id="account-access">Account active</span></span>
+      </div>
+      <section class="account-card panel" aria-label="Account details">
+        <div><div class="panel-kicker">SAVED ACCOUNT</div><h2 id="profile-name"></h2><p id="profile-email"></p></div>
+        <form id="password-form" class="password-form">
+          <div class="panel-kicker">UPDATE PASSWORD</div>
+          <label for="current-password">Current password</label><input id="current-password" type="password" autocomplete="current-password" required>
+          <label for="new-password">New password <small>(10 characters or more)</small></label><input id="new-password" type="password" minlength="10" maxlength="256" autocomplete="new-password" required>
+          <button class="button button-outline" type="submit">Change password <span>→</span></button>
+          <p class="console-message" id="password-message" role="status"></p>
+        </form>
+      </section>
+
+      <div class="admin-tools hidden" id="admin-tools">
+        <div class="console-stats" id="console-stats">
+          <article class="stat-card"><span>LIBRARY ITEMS</span><b id="stat-items">—</b><small>Published on your website</small></article>
+          <article class="stat-card"><span>AI MODELS</span><b id="stat-models">—</b><small>Available in the library</small></article>
+          <article class="stat-card"><span>WINDOWS APPS</span><b id="stat-apps">—</b><small>Direct application downloads</small></article>
+          <article class="stat-card"><span>ACTIVE API KEYS</span><b id="stat-api-keys">—</b><small>KODE.MINI access keys</small></article>
+        </div>
+        <div class="console-grid">
+          <section class="panel editor-panel">
+            <div class="panel-heading"><div><div class="panel-kicker">01 / HOMEPAGE</div><h2>Edit website copy</h2></div><span class="panel-mark">↗</span></div>
+            <p class="panel-copy">Changes are saved to the local website content store and appear to visitors after saving.</p>
+            <form id="content-form" class="console-form">
+              <div class="field-pair"><div><label for="edit-hero-lead">Hero first line</label><input id="edit-hero-lead" maxlength="60" required></div><div><label for="edit-hero-accent">Hero accent line</label><input id="edit-hero-accent" maxlength="60" required></div></div>
+              <label for="edit-hero-description">Hero description</label><textarea id="edit-hero-description" rows="3" maxlength="500" required></textarea>
+              <label for="edit-about-heading">About heading <small>(two lines)</small></label><textarea id="edit-about-heading" rows="2" maxlength="120" required></textarea>
+              <label for="edit-about-description">About description</label><textarea id="edit-about-description" rows="3" maxlength="500" required></textarea>
+              <label for="edit-footer-description">Footer description</label><textarea id="edit-footer-description" rows="2" maxlength="160" required></textarea>
+              <div class="form-actions"><button class="button button-dark" type="submit">Save homepage <span>→</span></button><p class="console-message" id="save-message" role="status"></p></div>
+            </form>
+          </section>
+          <aside class="panel library-panel">
+            <div class="panel-heading"><div><div class="panel-kicker">02 / LIBRARY</div><h2>Published projects</h2></div><a class="panel-mark" href="/#library" aria-label="View library">↗</a></div>
+            <p class="panel-copy">Your open-source software, AI models, and app downloads currently listed on the website.</p>
+            <div class="console-projects" id="console-projects"><p class="console-empty">Loading project library…</p></div>
+            <a class="underline-link" href="/#library">View public library <span>↗</span></a>
+          </aside>
+        </div>
+
+        <section class="panel api-keys-panel" aria-labelledby="api-title">
+          <div class="panel-heading"><div><div class="panel-kicker">03 / KODE.MINI API</div><h2 id="api-title">Issue and manage API keys</h2></div><span class="api-model-pill">PYTHON ENGINE</span></div>
+          <p class="panel-copy">Create bearer keys for KODE.MINI. Keys are stored as hashes and shown only once. Subscriber access is activated manually until checkout is connected.</p>
+          <form id="api-key-form" class="api-key-form">
+            <div><label for="key-email">Account email</label><input id="key-email" type="email" value="mahir31891@gmail.com" required></div>
+            <div><label for="key-label">Key name</label><input id="key-label" type="text" maxlength="80" value="KODE.MINI API key" required></div>
+            <div><label for="key-expiry">Active through <small>(owner access is permanent)</small></label><input id="key-expiry" type="date"></div>
+            <button class="button button-dark" type="submit">Create API key <span>→</span></button>
+          </form>
+          <p class="console-message" id="key-message" role="status" aria-live="polite"></p>
+          <div class="key-reveal hidden" id="key-reveal" aria-live="polite"><div><b>Copy this key now</b><span>You will not be able to view it again.</span></div><code id="new-key-value"></code><button class="button button-outline" id="copy-key" type="button">Copy key</button></div>
+          <div class="api-keys-list" id="api-keys-list"><p class="console-empty">Loading KODE.MINI API keys…</p></div>
+          <div class="api-usage">
+            <div><div class="panel-kicker">LOCAL API ENDPOINT</div><code>http://127.0.0.1:8000/v1/chat/completions</code></div>
+            <p>Use from your server or terminal. Keep API keys out of browser JavaScript and public repositories.</p>
+            <pre><code>Authorization: Bearer YOUR_OPENKODE_API_KEY
+POST /v1/chat/completions
+{"model":"kode-mini","messages":[{"role":"user","content":"Hello"}]}</code></pre>
+          </div>
+        </section>
+        <section class="panel accounts-panel" aria-labelledby="accounts-title">
+          <div class="panel-heading"><div><div class="panel-kicker">04 / USER DATA</div><h2 id="accounts-title">Saved accounts</h2></div><span class="panel-mark" id="account-count">—</span></div>
+          <p class="panel-copy">Account names and email addresses are saved locally. Passwords are only stored as salted hashes and are never shown here.</p>
+          <div id="accounts-list" class="accounts-list"><p class="console-empty">Loading saved accounts…</p></div>
+        </section>
+      </div>
+      <section class="user-notice panel hidden" id="user-notice"><div class="panel-kicker">KODE.MINI ACCESS</div><h2>Your Open-Kode account is saved.</h2><p>The company administrator issues KODE.MINI API keys after subscription access is confirmed. Contact Open-Kode for access.</p></section>
+      <p class="console-footnote">This local Python server saves account records in SQLite. Passwords are scrypt-hashed. Netlify hosts static website files; it does not run this KODE.MINI Python API.</p>
+    </section>
+  </main>
+  <footer class="console-footer"><span>© <span id="year"></span> Open-Kode</span><a href="/">Return to website ↑</a></footer>
+  <script src="/console.js" defer></script>
+</body>
+</html>

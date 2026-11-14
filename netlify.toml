@@ -1,0 +1,35 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/console"
+  to = "/console.html"
+  status = 200
+
+[[redirects]]
+  from = "/playground"
+  to = "/playground.html"
+  status = 200
+
+[[redirects]]
+  from = "/models/*"
+  to = "/detail.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects/*"
+  to = "/detail.html"
+  status = 200
+
+[[redirects]]
+  from = "/apps/*"
+  to = "/detail.html"
+  status = 200

@@ -1,0 +1,11 @@
+{
+  "name": "openkode-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare-netlify.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  }
+}
